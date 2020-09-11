@@ -15,6 +15,20 @@ class App extends Component{
       applicationName: 'TrafficMap'
     }
   }
+
+  render() {
+    return (
+      <div className="App">
+        <Header appName={this.state.applicationName}/>
+
+        <Container >
+             < Map /> 
+        </Container>
+        
+
+      </div>
+    );
+  }
 }
 
 export default App;
